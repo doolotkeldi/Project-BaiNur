@@ -1,0 +1,134 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+  
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.text-info-filter>span>h1{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.odejda-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    position: relative;
+}
+.odejda-content>button{
+    position: absolute;
+  width: 120px;
+  height: 45px;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #0066FF;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+
+}
+
+
+
+
+.filter-position{
+   
+    width: 1120px;
+    height: 580px;
+   background-color: #FFFFFF;
+   border: 2px solid #000000;
+    /* top: -400%; */
+    transition-duration: 0.5s;
+    
+
+    z-index: 2;
+    border-radius: 12px;
+    position: absolute;
+
+  
+    animation: show-sercle 0.5s forwards;
+
+  
+
+}
+@keyframes show-sercle{
+    0%{
+    
+        transform: translateY(-500%);
+        top: -500%;
+
+    }
+    
+    
+    100%{
+        transform: translateY(0);
+         top: 40px;
+    }
+}
+.filter-position.enterent {
+    animation: filterEnterent 0.5s forwards;
+}
+
+.filter-position.exiting {
+    animation: filterExiting 0.5s forwards;
+}
+
+@keyframes filterEnterent {
+    0% {
+        top: -500%;
+        transform: translateY(-500%);
+    }
+    100% {
+        top: 40px;
+        transform: translateY(40px);
+    }
+}
+
+@keyframes filterExiting {
+    0% {
+        top: 40px;
+        transform: translateY(40px);
+    }
+    100% {
+        top: -500%;
+        transform: translateY(-500%);
+    }
+}
+
+
+
+.filter-header{
+    width: 900px;
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-position-content>h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.filter-position-content>div>p{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+
+}
+.filter-position-content{
+    display: flex;
+    flex-direction: column;
+    
+}
