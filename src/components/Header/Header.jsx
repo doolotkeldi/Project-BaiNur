@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import corzina from "../../assets/svg/basket.svg";
@@ -10,12 +11,15 @@ import './Header.css'
 function Header() {
   
 
+
   return (
     <>
       <header>
         <div className="container">
           <div>
+
             <img src={BaiNur} alt="" />
+
           </div>
           <nav>
             <ul>
@@ -52,7 +56,9 @@ function Header() {
               <img className="search" src={Search} alt="" />
               <img className="heart" src={heart} alt="" />
             </div>
+
           </nav>
+
         </div>
       </header>
     </>

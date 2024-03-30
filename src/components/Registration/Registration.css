@@ -1,0 +1,47 @@
+.forms{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+form input {
+    width: 350px;
+    height: 52px;
+    border-radius: 10px;
+    margin-top: 1px;
+    padding: 0 0 0 10px;
+    font-size: 15px;
+    border: 1px solid gray;
+    outline: none;
+
+}
+form input:hover,
+form input:focus{
+    transition: all 1s;
+    border:1px solid #0000FF;
+}
+form button{
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: 
+    #0000FF;
+    color: white;
+    font-size: 20px;
+
+}
+.regPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.regPage h1 {
+    font-size: 30px;
+}
+.regPage h1:hover,
+.regPage h1:focus{
+    color: #0000FF;
+}
