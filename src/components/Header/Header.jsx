@@ -1,59 +1,66 @@
-import React from 'react';
-import { Link} from 'react-router-dom';
-import { RxHamburgerMenu } from "react-icons/rx";
-import './Header.css';
 
-import corzina from '../../assets/svg/corzina.svg';
-import Logo from '../../assets/svg/Logo.svg';
-import heart from '../../assets/svg/heart.svg';
-import man from '../../assets/svg/man.svg';
-import a from '../../assets/svg/a.svg';
-import search from '../../assets/svg/search.svg';
-import Contact from '../Contact/Contact';
-import SearchInfo from '../Search/Search';
-
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import corzina from "../../assets/svg/basket.svg";
+import heart from "../../assets/svg/favorites1.svg";
+import Man from "../../assets/svg/user.svg";
+import Search from "../../assets/svg/Vector.svg";
+import BaiNur from '../../assets/svg/Logo.svg'
+import './Header.css'
 
 function Header() {
-  const gotoWoman = () => {
-    
-  }
- 
-  return (
-    <header>
-      <div className='wrapper'>
-        <div className="text-content">
-          <div>
-            <img src={Logo} alt="" />
-          </div>
 
-          <h1 style={{marginLeft:"20px"}}><Link style={{color:"#3C4242"}} to='/'>Shop</Link></h1>
-          <h1 onClick={gotoWoman}><Link style={{color:"#807D7E"}} to='/contact'>Women</Link></h1>
-        </div>
-        <div className="input-content">
-          <div className='input-info'>
-            <input type="text" placeholder={` Search`} />
+  return (
+    <>
+      <header>
+        <div className="container">
+          <div>
+
+            <img src={BaiNur} alt="" />
+
           </div>
-          <div className="image-info">
-            <div>
-              <img src={heart} alt="" />
-            </div>
-            <div>
-              <Link to="/registration">
-                 <img  src={man} alt="" />
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Главная</Link>
+              </li>
+              <li>
+                <Link to="/about">О нас</Link>
+              </li>
+          
+              <li>
+                <Link to="/formen">Для Мужчин</Link>
+              </li>
+              <li>
+                <Link to="/women">Для Женщин</Link>
+              </li>
+              <li>
+                <Link to="/children">Для Детей</Link>
+              </li>
+            </ul>
+            <div className="image-info-header">
+              <Link to="/Registration">
+                <img className="man" src={Man} alt="" />
               </Link>
+              <select className="select" name="" id="">
+                <option className="option" value="">
+                  Ru
+                </option>
+              </select>
+              <Link className="cart" to="/cart">
+        
+                <img className="corzina" src={corzina} alt="" />
+              </Link>
+              <img className="search" src={Search} alt="" />
+              <img className="heart" src={heart} alt="" />
             </div>
-            <div>
-              <img src={corzina} alt="" />
-            </div>
-            <div>
-              <img src={a} alt="" />
-            </div>
-          </div>
+
+          </nav>
+
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }
 
 export default Header;
-
