@@ -9,8 +9,6 @@ import BaiNur from '../../assets/svg/Logo.svg'
 import './Header.css'
 
 function Header() {
-  
-
 
   return (
     <>
