@@ -1,0 +1,13 @@
+.formsSingIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SingIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SingIn input{
+    margin-top: 20px;
+}
