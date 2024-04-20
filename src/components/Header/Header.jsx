@@ -9,7 +9,6 @@ import BaiNur from '../../assets/svg/Logo.svg'
 import './Header.css'
 
 function Header() {
-  
 
 
   return (
@@ -43,6 +42,7 @@ function Header() {
             <div className="image-info-header">
               <Link to="/Registration">
                 <img className="man" src={Man} alt="" />
+
               </Link>
               <select className="select" name="" id="">
                 <option className="option" value="">
@@ -56,7 +56,19 @@ function Header() {
               <img className="search" src={Search} alt="" />
               <Link to='/izbran'>
               <img className="heart" src={heart} alt="" />
+
               </Link>
+              <select className="select" name="" id="">
+                <option className="option" value="">
+                  Ru
+                </option>
+              </select>
+              <Link className="cart" to="/cart">
+        
+                <img className="corzina" src={corzina} alt="" />
+              </Link>
+              <img className="search" src={Search} alt="" />
+              <img className="heart" src={heart} alt="" />
             </div>
 
           </nav>
