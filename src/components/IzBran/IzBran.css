@@ -1,0 +1,28 @@
+.cart-decrament>button{
+    width: 250px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0000FF;
+    color: #ffffff;
+    
+
+
+}
+.cart-block{
+    position: relative;
+}
+.delete{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+
+}
+.in-dec>button{
+  background-color: #444444;
+  border: none;
+  font-size: 35px;
+  color:#ffffff;
+}
