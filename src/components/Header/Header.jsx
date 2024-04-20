@@ -59,7 +59,9 @@ function Header() {
                 <img className="corzina" src={corzina} alt="" />
               </Link>
               <img className="search" src={Search} alt="" />
+              <Link to="/izbran">
               <img className="heart" src={heart} alt="" />
+              </Link>
             </div>
 
           </nav>
