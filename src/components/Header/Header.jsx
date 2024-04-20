@@ -49,15 +49,6 @@ function Header() {
                   Ru
                 </option>
               </select>
-              <Link className="cart" to="/cart">
-        
-                <img className="corzina" src={corzina} alt="" />
-              </Link>
-              <img className="search" src={Search} alt="" />
-              <Link to='/izbran'>
-              <img className="heart" src={heart} alt="" />
-
-              </Link>
               <select className="select" name="" id="">
                 <option className="option" value="">
                   Ru
